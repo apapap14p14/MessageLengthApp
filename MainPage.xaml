@@ -1,0 +1,12 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MessageLengthApp.MainPage">
+    <StackLayout Padding="20">
+        <Frame CornerRadius="10" BorderColor="Black" BackgroundColor="White" Padding="10" Margin="10">
+            <Entry x:Name="messageEntry" Placeholder="Enter your message" />
+        </Frame>
+
+        <Button Text="Send" Clicked="OnSendClicked" Margin="10" />
+        <Label x:Name="messageLengthLabel" Text="" Margin="10" />
+    </StackLayout>
+</ContentPage>
